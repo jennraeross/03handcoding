@@ -1,0 +1,82 @@
+@import nord.sass
+html 
+    scroll-behavior: smooth
+body 
+    margin: 0
+    padding: 0
+    font-family: "Raleway", sans-serif
+    font-size: 1.25em
+    line-height: 1.6
+    font-weight: 400
+    text-align: left
+    color: $light-1
+    background-color: $dark-1
+main 
+    margin: 3em
+a 
+    color: $light-4
+a:hover 
+    color: $primary-2
+blockquote, dl, ul, ol
+    background-color: $dark-3
+    padding: 2em
+    margin: 1em
+    border: 2px solid $dark-2
+dl 
+    dt 
+        font-weight: 600
+        text-decoration: underline
+        color: $light-2
+    dd 
+        color: $light-4
+nav 
+    width: 100%
+    border-bottom: 1px solid $dark-1
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    margin: 0
+    padding: 1em
+    background-color: $dark-2
+    ul 
+        float: right
+        list-style-type: none
+        margin: 0
+        padding: 0
+        height: 100%
+        background-color: $dark-2
+        padding: none
+        border: none
+        li 
+            display: inline
+            padding-right: .5em
+            padding-left: .5em
+            margin-right: .5em
+            height: 100%
+            a 
+                text-decoration: none
+        .reactive
+            font-weight: 700
+            a:active
+                color: $primary-1
+        li.active
+            color: $primary-1
+
+header
+    height: 100vh
+    width: 100%
+    background-color: $dark-4
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center   
+footer
+    float: right
+#top
+    position: absolute
+    top: 0
+.kanji
+    list-style-type: cjk-ideographic
+.square
+    list-style-type: square

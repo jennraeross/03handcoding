@@ -1,0 +1,112 @@
+html {
+    /* Makes the in-page links scroll window rather than jump */
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    /* Font Settings */
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25em;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    background-color: rgb(46, 52, 64);
+  }
+  
+  main {
+    margin: 3em;
+  }
+  
+  a {
+    color: #d8dee9;
+  }
+  
+  a:hover {
+    color: #81a1c1;
+  }
+  
+  blockquote, dl, ul, ol {
+    background-color: #434c5e;
+    padding: 2em;
+    margin: 1em;
+    border: 2px solid #3b4252;
+  }
+  
+  dl dt {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #eceff4;
+  }
+  dl dd {
+    color: #d8dee9;
+  }
+  
+  nav {
+    width: 100%;
+    border-bottom: 1px solid #2e3440;
+    /* Make Navbar stay at top of screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    background-color: #3b4252;
+  }
+  nav ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #3b4252;
+    padding: 0;
+    border: none;
+  }
+  nav ul li {
+    display: inline;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    margin-right: 0.5em;
+    height: 100%;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+  nav ul .active {
+    font-weight: 700;
+  }
+  nav ul .active a:active {
+    color: #88c0d0;
+  }
+  
+  header {
+    height: 100vh;
+    width: 100%;
+    background-color: #4c566a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer {
+    float: right;
+  }
+  
+  #top {
+    position: absolute;
+    top: 0;
+  }
+  
+  .kanji {
+    list-style-type: cjk-ideographic;
+  }
+  
+  .square {
+    list-style-type: square;
+  }
+  
