@@ -1,10 +1,12 @@
 html {
+  /* Makes the in-page links scroll window rather than jump */
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
+  /* Font Settings */
   font-family: "Raleway", sans-serif;
   font-size: 1.25em;
   line-height: 1.6;
@@ -45,6 +47,7 @@ dl dd {
 nav {
   width: 100%;
   border-bottom: 1px solid #2e3440;
+  /* Font Settings */
   position: fixed;
   top: 0;
   left: 0;
@@ -81,6 +84,7 @@ nav ul .reactive a:active {
 }
 nav ul li.active {
   color: #88c0d0;
+  font-weight: 700;
 }
 
 header {
