@@ -1,12 +1,10 @@
 html {
-  /* Makes the in-page links scroll window rather than jump */
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  /* Font Settings */
   font-family: "Raleway", sans-serif;
   font-size: 1.25em;
   line-height: 1.6;
@@ -47,7 +45,6 @@ dl dd {
 nav {
   width: 100%;
   border-bottom: 1px solid #2e3440;
-  /* Font Settings */
   position: fixed;
   top: 0;
   left: 0;
@@ -63,7 +60,7 @@ nav ul {
   padding: 0;
   height: 100%;
   background-color: #3b4252;
-  padding: none;
+  padding: 0;
   border: none;
 }
 nav ul li {
@@ -101,6 +98,98 @@ footer {
   float: right;
 }
 
+figure {
+  border: 3px solid #d8dee9;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+figure img {
+  max-width: 90%;
+}
+
+form {
+  background-color: #3b4252;
+  padding: 2em;
+  margin: 2em;
+}
+
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  height: 6em;
+  background-color: #4c566a;
+  border: 1px solid white;
+  color: white;
+  border-radius: 0.3em;
+}
+
+fieldset {
+  border-radius: 0.3em;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  height: 3em;
+  background-color: #4c566a;
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid white;
+}
+
+::placeholder {
+  color: white;
+}
+
+select {
+  height: 3.5em;
+  padding: 1em;
+  color: white;
+  background-color: #3b4252;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  width: 100%;
+}
+
+input[type=submit] {
+  height: 3em;
+  padding: 1em;
+  color: white;
+  background-color: #3b4252;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background-color: #2e3440;
+}
+
+input:focus:required:invalid {
+  border: 1px solid #bf616a;
+}
+
+input:required:valid {
+  border: 1px solid white;
+}
+
 #top {
   position: absolute;
   top: 0;
@@ -114,4 +203,25 @@ footer {
   list-style-type: square;
 }
 
-/*# sourceMappingURL=main.css.map */
+.right {
+  float: right;
+}
+
+.scales {
+  width: 20%;
+}
+
+#gallery {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,64 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap")
+        link(rel="stylesheet" href="css/main.css")
+        title Longform Writer's Conference: Contact Us
+    body
+        a#top
+        header
+            h1 Let's get in touch!
+            h1 ↓
+        nav 
+            ul
+                li.reactive #[a(href="#top") Top]
+                li.reactive #[a(href="index.html") Home]
+                li.reactive #[a(href="recommended.html") Recommended Tools]
+                li.reactive #[a(href="gallery.htmls")]Gallery
+                li.active Contact
+        main
+            form(action="thanks.html" method="POST")
+                fieldset
+                    legend Contact Info (Required)
+                    input(type="text" placeholder="Name" required)
+                    input(type="email" placeholder="Email" required)
+                    input(type="tel" placeholder="Phone #" pattern="[0-9]{10,11}|\\(([0-9]){3}\\)([0-9]){3}-([0-9]){4}|([0-9]){3}-([0-9]){3}-([0-9]){4}|\\(([0-9]){3}\\) ([0-9]){3}-([0-9]){4}" required)
+
+                fieldset
+                    legend Survey (Optional)
+                    p Select your gender:
+                    input(type="radio" name="gender" id="man" value="man")
+                    label(for="man") Man #[br]
+                    input(type="radio" name="gender" id="woman" value="woman")
+                    label(for="woman") Woman #[br]
+                    input(type="radio" name="gender" id="nonbinary" value="nonbinary")
+                    label(for="nonbinary") Non-Binary #[br]
+                    input(type="radio" name="gender" id="other" value="other")
+                    label(for="other") Other #[br]#[br]
+
+                    p What relation do you have to the conference?
+                    input(type="checkbox" name="role" id="author" value="author")
+                    label(for="author") Author #[br]
+                    input(type="checkbox" name="role" id="hobbyist" value="hobbyist")
+                    label(for="hobbyist") Hobbyist #[br]
+                    input(type="checkbox" name="role" id="employee" value="employee")
+                    label(for="employee") Conference Employee #[br]#[br]
+
+                    p What is your age?
+                    select(id="age" name="age")
+                        option(value="18_25") 18-25
+                        option(value="25_32") 25-32
+                        option(value="32_50") 32-50
+                        option(value="50plus") 50+
+                    br
+                    br
+
+
+                fieldset
+                    legend Message (Required)
+                    textarea(required)
+                br
+                input(type="submit", value="Submit")
+        footer
+            p &copy; #[a(href="https://www.jennroylance.com") Jennifer Roylance] &#8226; 2020-10-01 &#8226; #[a(href="mailto:jennroylance@gmail.com") Contact Us]
