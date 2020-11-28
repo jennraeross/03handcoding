@@ -12,10 +12,29 @@ body {
   text-align: left;
   color: white;
   background-color: #2e3440;
+  background-image: url(../img/background.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
   margin: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e3440;
+  padding: 2em;
+  box-shadow: -2px 1px 20px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 20px -1px rgba(0, 0, 0, 0.75);
+}
+
+#wrapper {
+  max-width: 900px;
+  min-width: 200px;
 }
 
 a {
@@ -42,48 +61,6 @@ dl dd {
   color: #d8dee9;
 }
 
-nav {
-  width: 100%;
-  border-bottom: 1px solid #2e3440;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 1em;
-  background-color: #3b4252;
-}
-nav ul {
-  float: right;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #3b4252;
-  padding: 0;
-  border: none;
-}
-nav ul li {
-  display: inline;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  margin-right: 0.5em;
-  height: 100%;
-}
-nav ul li a {
-  text-decoration: none;
-}
-nav ul .reactive {
-  font-weight: 700;
-}
-nav ul .reactive a:active {
-  color: #88c0d0;
-}
-nav ul li.active {
-  color: #88c0d0;
-  font-weight: 700;
-}
-
 header {
   height: 100vh;
   width: 100%;
@@ -92,6 +69,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0.5em;
+  margin: 0.5em;
+  background: #3b4252;
+  background: linear-gradient(0deg, #3b4252 0%, #4c566a 65%, #2e3440 100%);
+  text-shadow: 0.25em 0.25em #3b4252;
 }
 
 footer {
@@ -107,6 +89,9 @@ figure {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  box-shadow: -2px 1px 20px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 20px -1px rgba(0, 0, 0, 0.75);
 }
 figure img {
   max-width: 90%;
@@ -191,21 +176,66 @@ input:required:valid {
   border: 1px solid white;
 }
 
+nav {
+  width: 100%;
+  border-bottom: 1px solid #2e3440;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  background-color: #4c566a;
+  background-image: url("../img/pen.png");
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: 0.5em center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 4em;
+  padding: 0;
+  height: 100%;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: none;
+}
+nav ul li {
+  display: inline;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  margin-right: 0.5em;
+  height: 100%;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul .reactive {
+  font-weight: 700;
+}
+nav ul .reactive a:active {
+  color: #88c0d0;
+}
+nav ul li.active {
+  color: #88c0d0;
+  font-weight: 700;
+}
+
 #top {
   position: absolute;
   top: 0;
 }
 
 .kanji {
-  list-style-type: cjk-ideographic;
+  list-style-image: url("../img/pencil.png");
 }
 
 .square {
-  list-style-type: square;
-}
-
-.right {
-  float: right;
+  list-style-image: url("../img/arrow.png");
 }
 
 .scales {
@@ -226,4 +256,44 @@ input:required:valid {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.inlineImage {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: none;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+  nav li {
+    border: 1px solid white;
+    border-radius: 0.2em;
+    background-color: #2e3440;
+    width: 95%;
+    margin: 0;
+    margin-bottom: 0.3em;
+    padding: 0.3em;
+  }
+
+  .inlineImage {
+    flex-direction: column;
+    align-items: center;
+  }
 }

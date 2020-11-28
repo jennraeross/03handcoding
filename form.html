@@ -21,45 +21,47 @@
       </ul>
     </nav>
     <main>
-      <form action="thanks.html" method="POST">
-        <fieldset>
-          <legend>Contact Info (Required)</legend>
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-          <input type="tel" placeholder="Phone #" pattern="[0-9]{10,11}|\(([0-9]){3}\)([0-9]){3}-([0-9]){4}|([0-9]){3}-([0-9]){3}-([0-9]){4}|\(([0-9]){3}\) ([0-9]){3}-([0-9]){4}" required>
-        </fieldset>
-        <fieldset>
-          <legend>Survey (Optional)</legend>
-          <p>Select your gender:</p>
-          <input type="radio" name="gender" id="man" value="man">
-          <label for="man">Man <br></label>
-          <input type="radio" name="gender" id="woman" value="woman">
-          <label for="woman">Woman <br></label>
-          <input type="radio" name="gender" id="nonbinary" value="nonbinary">
-          <label for="nonbinary">Non-Binary <br></label>
-          <input type="radio" name="gender" id="other" value="other">
-          <label for="other">Other <br><br></label>
-          <p>What relation do you have to the conference?</p>
-          <input type="checkbox" name="role" id="author" value="author">
-          <label for="author">Author <br></label>
-          <input type="checkbox" name="role" id="hobbyist" value="hobbyist">
-          <label for="hobbyist">Hobbyist <br></label>
-          <input type="checkbox" name="role" id="employee" value="employee">
-          <label for="employee">Conference Employee <br><br></label>
-          <p>What is your age?</p>
-          <select id="age" name="age">
-            <option value="18_25">18-25</option>
-            <option value="25_32">25-32</option>
-            <option value="32_50">32-50</option>
-            <option value="50plus">50+</option>
-          </select><br><br>
-        </fieldset>
-        <fieldset>
-          <legend>Message (Required)</legend>
-          <textarea required></textarea>
-        </fieldset><br>
-        <input type="submit" value="Submit">
-      </form>
+      <div id="wrapper">
+        <form action="thanks.html" method="POST">
+          <fieldset>
+            <legend>Contact Info (Required)</legend>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone #" pattern="[0-9]{10,11}|\(([0-9]){3}\)([0-9]){3}-([0-9]){4}|([0-9]){3}-([0-9]){3}-([0-9]){4}|\(([0-9]){3}\) ([0-9]){3}-([0-9]){4}" required>
+          </fieldset>
+          <fieldset>
+            <legend>Survey (Optional)</legend>
+            <p>Select your gender:</p>
+            <input type="radio" name="gender" id="man" value="man">
+            <label for="man">Man <br></label>
+            <input type="radio" name="gender" id="woman" value="woman">
+            <label for="woman">Woman <br></label>
+            <input type="radio" name="gender" id="nonbinary" value="nonbinary">
+            <label for="nonbinary">Non-Binary <br></label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other <br><br></label>
+            <p>What relation do you have to the conference?</p>
+            <input type="checkbox" name="role" id="author" value="author">
+            <label for="author">Author <br></label>
+            <input type="checkbox" name="role" id="hobbyist" value="hobbyist">
+            <label for="hobbyist">Hobbyist <br></label>
+            <input type="checkbox" name="role" id="employee" value="employee">
+            <label for="employee">Conference Employee <br><br></label>
+            <p>What is your age?</p>
+            <select id="age" name="age">
+              <option value="18_25">18-25</option>
+              <option value="25_32">25-32</option>
+              <option value="32_50">32-50</option>
+              <option value="50plus">50+</option>
+            </select><br><br>
+          </fieldset>
+          <fieldset>
+            <legend>Message (Required)</legend>
+            <textarea required></textarea>
+          </fieldset><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </main>
     <footer>
       <p>&copy; <a href="https://www.jennroylance.com">Jennifer Roylance</a> &#8226; 2020-10-01 &#8226; <a href="mailto:jennroylance@gmail.com">Contact Us</a></p>
