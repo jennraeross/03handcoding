@@ -82,6 +82,8 @@ header {
 
 footer {
   float: right;
+  max-width: 100%;
+  padding: 0.5em;
 }
 
 figure {
@@ -297,6 +299,20 @@ nav ul li.active {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+.button {
+  padding: 0.6em 1em;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  background-color: #434c5e;
+  text-decoration: none;
+}
+
+.button:hover {
+  border: 1px solid #d8dee9;
+  background-color: #4c566a;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {

@@ -21,6 +21,15 @@ html(lang="en")
             h1 ↓
         main#introduction
             #wrapper
+                h3 Sound Clip:
+                .centerFrame
+                    audio(controls)
+                        source(src="resources/output.ogg" type="audio/ogg")
+                        source(src="resources/output.mp3" type="audio/mpeg")
+                        p Your browser does not support listening to audio.
+                h3 Brochure:
+                .centerFrame
+                    a.button(href="resources/brochure.pdf", target="_blank") Download
                 h3 Video Series on Creative Writing:
                 .centerFrame
                     iframe(width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLSH_xM-KC3Zv-79sVZTTj-YA6IAqh8qeQ' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')

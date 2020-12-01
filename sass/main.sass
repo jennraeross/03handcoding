@@ -65,6 +65,8 @@ header
     text-shadow: .25em .25em $dark-2
 footer
     float: right
+    max-width: 100%
+    padding: .5em
 
 figure
     border: 3px solid $light-4
@@ -242,6 +244,17 @@ nav
     flex-direction: column
     align-items: center
     justify-content: flex-start
+
+.button
+    padding: .6em 1em
+    border: 1px solid $light-1
+    border-radius: .3em
+    background-color: $dark-3
+    text-decoration: none
+.button:hover
+    border: 1px solid $light-4
+    background-color: $dark-4
+    color: $light-1
 
 @media only screen and (max-width: 600px)
     nav 
